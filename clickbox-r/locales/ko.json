@@ -1,0 +1,12 @@
+{
+  "get_your_offer": "당신의 혜택 받기!",
+  "congratulations": "축하합니다!",
+  "you_have_10_seconds_tap_to_earn": "{seconds}초만 남았습니다. 탭하여 보너스를 받으세요!",
+  "start": "시작",
+  "tap_to_earn": "탭하여 보너스 받기",
+  "you_have_10_seconds": "{seconds}초가 남았습니다",
+  "time_left": "남은 시간:",
+  "you_have_to_get_the_bonus": "보너스를 받기 위해 {final_seconds}이 남았습니다!",
+  "click_and_get_your_offer": "아래 버튼을 클릭하여 특별 혜택을 받으세요.",
+  "get_special_offer": "특별 혜택 받기"
+}

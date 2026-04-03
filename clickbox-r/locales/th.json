@@ -1,0 +1,12 @@
+{
+  "get_your_offer": "รับข้อเสนอของคุณ!",
+  "congratulations": "ขอแสดงความยินดี!",
+  "you_have_10_seconds_tap_to_earn": "คุณมีเวลาเพียง {seconds} วินาที แตะเพื่อรับโบนัสของคุณ!",
+  "start": "เริ่มต้น",
+  "tap_to_earn": "แตะเพื่อรับ โบนัสของคุณ",
+  "you_have_10_seconds": "คุณมีเวลา {seconds} วินาที",
+  "time_left": "เวลาที่เหลือ:",
+  "you_have_to_get_the_bonus": "คุณมีเวลา {final_seconds} เพื่อรับโบนัส!",
+  "click_and_get_your_offer": "คลิกปุ่มด้านล่างเพื่อรับข้อเสนอพิเศษของคุณ",
+  "get_special_offer": "รับข้อเสนอพิเศษ"
+}
