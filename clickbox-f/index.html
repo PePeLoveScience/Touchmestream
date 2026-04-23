@@ -1,0 +1,148 @@
+<!doctype html>
+<html data-version="0.0.197" data-landing-name="clickbox" data-env="production-archive" js-version="zxkZeJyelo27vCVvrk0IUny44fyApf8QH1KurzTVDEVAHjs" lang="" data-template-hash-by-main="cbcd74ae63d2666d4d457e33769b96639d69051c8a84c47ba292917dbbe6e1c8" data-template-hash-by-html="3f788a57a01ee9c32fedfd5abc3cbb481c8f44eb05ee776a8256413a1b372946" data-template-hash-by-css="6524558dcd36e1e9f1df9f195f2c1c82684b55a65e64cd313742b8aab31d7940" data-template-hash-by-js="5053eae325d003c3ed1a3fca6f7d4930928299ac4e00649636bd4b91776fc6c2" data-build-html-stats='eyJub2RlQ291bnQiOjgzLCJ0ZXh0TGVuZ3RoIjoxOTMxOSwic3R5bGVDb3VudCI6MCwic2NyaXB0Q291bnQiOjV9'>
+
+<head>
+    <script>
+        var APP_CONFIG = {
+            "domain": "https://jup9.com",
+            "mainExit_currentTab_zoneId": 10745085,
+            "mainExit_newTab_zoneId": 10745084,
+            "reverse_zoneId": 10745083,
+            "push_zoneId": 10745088,
+            "autoexit_zoneId": 10745086,
+            "autoexit_timeToRedirect": 90,
+            "back_zoneId": 10745087,
+            "back_count": 10,
+            "tabUnderClick_zoneId": 10745089,
+            "secondsLeftBeforeFinal": 10
+        };
+    </script>
+    <script>"use strict";(()=>{var b=()=>{let t=new Date,r=t.getUTCFullYear(),n=String(t.getUTCMonth()+1).padStart(2,"0"),a=String(t.getUTCDate()).padStart(2,"0"),l=String(t.getUTCHours()).padStart(2,"0"),i=String(t.getUTCMinutes()).padStart(2,"0"),m=String(t.getUTCSeconds()).padStart(2,"0"),s=String(t.getUTCMilliseconds()*1e3).padStart(6,"0");return`${r}-${n}-${a} ${l}:${i}:${m}.${s} +00:00`};var S="events_history",p=()=>{try{let t=sessionStorage.getItem(S);return t?JSON.parse(t):[]}catch(t){return t instanceof Error&&window.syncMetric&&window.syncMetric({event:"error",errorMessage:t.message,errorType:"CUSTOM",errorSubType:"EventsHistoryGet"}),[]}},E=t=>{try{sessionStorage.setItem(S,JSON.stringify(t))}catch(r){r instanceof Error&&window.syncMetric&&window.syncMetric({event:"error",errorMessage:r.message,errorType:"CUSTOM",errorSubType:"EventsHistorySave"})}};var x=()=>{let t=window.location.search,r=new URLSearchParams(t).get("lang"),n=navigator.language.split("-")[0];return r||n||"en"};var u="data-template-hash-by-",st={main:`${u}main`,html:`${u}html`,css:`${u}css`,js:`${u}js`},at={main:"",html:"",css:"",js:""};var N=()=>window.templateHashes?JSON.stringify(window.templateHashes):null;var e=new URL(window.location.href),C,D,I,w,P,B,M,A,$,J,L,F,z,G,U,k,O,j,V,o={pz:(C=e.searchParams.get("pz"))!=null?C:"",tb:(D=e.searchParams.get("tb"))!=null?D:"",tb_reverse:(I=e.searchParams.get("tb_reverse"))!=null?I:"",ae:(w=e.searchParams.get("ae"))!=null?w:"",z:(P=e.searchParams.get("z"))!=null?P:"",var:(B=e.searchParams.get("var"))!=null?B:"",var_1:(M=e.searchParams.get("var_1"))!=null?M:"",var_2:(A=e.searchParams.get("var_2"))!=null?A:"",var_3:($=e.searchParams.get("var_3"))!=null?$:"",b:(J=e.searchParams.get("b"))!=null?J:"",campaignid:(L=e.searchParams.get("campaignid"))!=null?L:"",abtest:(F=e.searchParams.get("abtest"))!=null?F:"",rhd:(z=e.searchParams.get("rhd"))!=null?z:"1",s:(G=e.searchParams.get("s"))!=null?G:"",ymid:(U=e.searchParams.get("ymid"))!=null?U:"",wua:(k=e.searchParams.get("wua"))!=null?k:"",use_full_list_or_browsers:(O=e.searchParams.get("use_full_list_or_browsers"))!=null?O:"",cid:(j=e.searchParams.get("cid"))!=null?j:"",geo:(V=e.searchParams.get("geo"))!=null?V:""};var ot="zxkZeJyelo27vCVvrk0IUny44fyApf8QH1KurzTVDEVAHjs";var it={start:"start",ageExit:"age_exit",mainExit:"main_exit",push:"push",autoexit:"autoexit",back:"back",reverse:"reverse",tabUnderClick:"tab_under_click",error:"error",unhandledRejection:"unhandled_rejection",template_hash_ready:"template_hash_ready",template_hashes_ready:"template_hashes_ready"},ct=b(),lt=()=>o.abtest?o.abtest:APP_CONFIG.abtest?String(APP_CONFIG.abtest):void 0,q=({event:t,exitZoneId:r,errorMessage:n,errorSubType:a,errorType:l,skipHistory:i,skipContext:m})=>{var y,T,v,f,H;let s=(y=document.querySelector("html"))==null?void 0:y.dataset,Q=(s==null?void 0:s.landingName)||"",K=(s==null?void 0:s.version)||"",R=(s==null?void 0:s.env)||"",W=window.location.host,d=it[t]||t,Z=x(),tt=30,h=Date.now(),c=p(),_=c[c.length-1],et=_?h-_.currentTs:0;i||(c.push({currentTs:h,eventName:d,delta:et}),c.length>=tt&&c.shift(),E(c));let rt=[{app:"landings-constructor",event:d,language:Z,landing_name:Q,build_version:K,landing_domain:W,landing_url:window.location.href,exit_zone_id:r?Number(r):void 0,template_hash:(T=window.templateHash)!=null?T:"",request_var:o.var_3,source_zone_id:Number.isNaN(Number(o.var_2))?null:Number(o.var_2),sub_id:o.var_1,landing_load_date_time:ct,error_message:n!=null?n:"",ab2r:lt(),event_history:(v=JSON.stringify({event_history:JSON.parse(JSON.stringify(p()))}))!=null?v:null,context:m?void 0:JSON.stringify({template_hashes:JSON.parse((f=N())!=null?f:"{}")}),error_sub_type:a,error_type:l,env:R,js_version:ot}],nt=(H=APP_CONFIG.isAnalyticEnabled)!=null?H:!0;return{eventData:rt,isAnalyticEnabled:nt}};function g({url:t,data:r}){var a;return((a=window==null?void 0:window.navigator)==null?void 0:a.sendBeacon(t.toString(),r?JSON.stringify(r):void 0))?Promise.resolve():Promise.reject(new Error("sendBeacon failed"))}var X=t=>{let r;(i=>i[i.BAD_REQUEST=400]="BAD_REQUEST")(r||(r={}));let n="https://wuytl.com",a=new URL(`${n}/sync-metrics`);g({url:a,data:t}).catch(l=>{l.status!==400&&g({url:a,data:t}).catch(()=>{console.error(`Metrics sync failed: ${t}`)})})};var Y=t=>{let{eventData:r,isAnalyticEnabled:n}=q(t);n&&X(r)};window.syncMetric=Y;Y({event:"start"});})();</script>
+    <script>"use strict";(()=>{var g=()=>{let r=new Date,c=r.getUTCFullYear(),a=String(r.getUTCMonth()+1).padStart(2,"0"),l=String(r.getUTCDate()).padStart(2,"0"),e=String(r.getUTCHours()).padStart(2,"0"),s=String(r.getUTCMinutes()).padStart(2,"0"),o=String(r.getUTCSeconds()).padStart(2,"0"),n=String(r.getUTCMilliseconds()*1e3).padStart(6,"0");return`${c}-${a}-${l} ${e}:${s}:${o}.${n} +00:00`};var i="data-template-hash-by-",A={main:`${i}main`,html:`${i}html`,css:`${i}css`,js:`${i}js`},L={main:"",html:"",css:"",js:""};var t=new URL(window.location.href),d,y,h,_,v,f,b,T,H,S,E,x,C,N,w,I,P,D,M,O={pz:(d=t.searchParams.get("pz"))!=null?d:"",tb:(y=t.searchParams.get("tb"))!=null?y:"",tb_reverse:(h=t.searchParams.get("tb_reverse"))!=null?h:"",ae:(_=t.searchParams.get("ae"))!=null?_:"",z:(v=t.searchParams.get("z"))!=null?v:"",var:(f=t.searchParams.get("var"))!=null?f:"",var_1:(b=t.searchParams.get("var_1"))!=null?b:"",var_2:(T=t.searchParams.get("var_2"))!=null?T:"",var_3:(H=t.searchParams.get("var_3"))!=null?H:"",b:(S=t.searchParams.get("b"))!=null?S:"",campaignid:(E=t.searchParams.get("campaignid"))!=null?E:"",abtest:(x=t.searchParams.get("abtest"))!=null?x:"",rhd:(C=t.searchParams.get("rhd"))!=null?C:"1",s:(N=t.searchParams.get("s"))!=null?N:"",ymid:(w=t.searchParams.get("ymid"))!=null?w:"",wua:(I=t.searchParams.get("wua"))!=null?I:"",use_full_list_or_browsers:(P=t.searchParams.get("use_full_list_or_browsers"))!=null?P:"",cid:(D=t.searchParams.get("cid"))!=null?D:"",geo:(M=t.searchParams.get("geo"))!=null?M:""};var ce=g();var B=(n=>(n.Error="Error",n.RangeError="RangeError",n.ReferenceError="ReferenceError",n.SecurityError="SecurityError",n.SyntaxError="SyntaxError",n.TypeError="TypeError",n.Unknown="Unknown",n))(B||{}),$=(a=>(a.rejectionhandled="rejectionhandled",a.unhandledrejection="unhandledrejection",a))($||{}),G=()=>{let r=window.syncMetric;if(!r){console.log("Sync metric is not initialized");return}let c=()=>{var s;(((s=document.querySelector("html"))==null?void 0:s.getAttribute("data-env"))||"")==="production-archive"&&!Object.keys(APP_CONFIG).length&&(console.error("Empty APP_CONFIG!",APP_CONFIG),r({event:"error",errorMessage:"Empty APP_CONFIG",errorSubType:"EmptyAppConfig",errorType:"CUSTOM"}))},a=e=>{if(e.filename.includes("extension"))return;let s=`errorMessage: ${e.message}, lineNumber: ${e.lineno}, columnNumber: ${e.colno}, file: ${e.filename}`,o=e.error.name&&Object.values(B).includes(e.error.name)?e.error.name:"Unknown";r({event:"error",errorMessage:s,errorSubType:o,errorType:"JS"})},l=e=>{var u,m,p;if(typeof e.reason=="object"&&((m=(u=e.reason)==null?void 0:u.stack)!=null&&m.includes("extension")))return;let s=typeof e.reason=="object"&&((p=e.reason)!=null&&p.message)?e.reason.message:JSON.stringify(e.reason),o=e.type,n=Object.values($).includes(o)?o:"Unknown";r({event:"unhandledRejection",errorMessage:s,errorSubType:n,errorType:"JS"})};window.addEventListener("error",a),window.addEventListener("unhandledrejection",l),window.addEventListener("DOMContentLoaded",c)};G();})();</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="google" value="notranslate" />
+    <title data-translate="get_your_offer">Get Your Offer!</title>
+    <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <link rel="stylesheet" id="main-css" href="./assets/styles/style.css">
+    <script defer src="./assets/scripts/common.js"></script>
+    <!-- UNCOMMENT SCRIPTS BELLOW AND COMMENT LINE ABOVE, IF YOU WANT TO CUSTOMIZE FEATURES-->
+    <!--
+        <script type="module" defer src="./assets/scripts/appSdk.js"></script>
+        <script type="module" defer src="./assets/scripts/autoexit.js"></script>
+        <script type="module" defer src="./assets/scripts/pushScript.js"></script>
+        <script type="module" defer src="./assets/scripts/reverse.js"></script>
+        <script type="module" defer src="./assets/scripts/main.js"></script>
+        <script type="module" defer src="./assets/scripts/translateElements.js"></script>
+    -->
+</head>
+
+<body>
+    <!-- Section Background -->
+    <section class="background">
+        <div class="background__left">
+            <div class="background__left__top">
+                <img aria-hidden="true" alt="Cloud" class="background__cloud background__cloud-left-1" src="./assets/images/cloud-left-1.webp" />
+            </div>
+            <div class="background__left__bottom">
+                <img aria-hidden="true" alt="Cloud" class="background__cloud background__cloud-left-2" src="./assets/images/cloud-left-2.webp" />
+                <img aria-hidden="true" alt="Cloud" class="background__cloud background__cloud-left-3" src="./assets/images/cloud-left-3.webp" />
+                <img aria-hidden="true" alt="Cloud" class="background__cloud background__cloud-left-4" src="./assets/images/cloud-left-4.webp" />
+            </div>
+        </div>
+        <div class="background__right">
+            <div class="background__right__top">
+                <img aria-hidden="true" alt="Cloud" class="background__cloud background__cloud-right-1" src="./assets/images/cloud-right-1.webp" />
+            </div>
+            <div class="background__right__bottom">
+                <img aria-hidden="true" alt="Cloud" class="background__cloud background__cloud-right-2" src="./assets/images/cloud-right-2.webp" />
+                <img aria-hidden="true" alt="Cloud" class="background__cloud background__cloud-right-3" src="./assets/images/cloud-right-3.webp" />
+            </div>
+        </div>
+        <div class="background__stars">
+            <img aria-hidden="true" alt="Star" class="background__star background__star-1" src="./assets/images/star-five-pointed.webp" />
+            <img aria-hidden="true" alt="Star" class="background__star background__star-2" src="./assets/images/star-five-pointed.webp" />
+            <img aria-hidden="true" alt="Star" class="background__star background__star-3" src="./assets/images/star-five-pointed.webp" />
+            <img aria-hidden="true" alt="Star" class="background__star background__star-4" src="./assets/images/star-five-pointed.webp" />
+            <img aria-hidden="true" alt="Star" class="background__star background__star-5" src="./assets/images/star-five-pointed.webp" />
+            <img aria-hidden="true" alt="Star" class="background__star background__star-6" src="./assets/images/star-four-pointed.webp" />
+        </div>
+    </section>
+
+    <!-- Section Game Clicker -->
+    <section class="game blur">
+        <header class="game__header">
+            <h1 class="game__header__h1" data-translate="tap_to_earn">
+                Tap to earn your bonus
+            </h1>
+            <h3 class="game__header__h3 game__progress__value-header" data-translate="you_have_10_seconds">
+                You have 10 seconds
+            </h3>
+        </header>
+        <main class="game__main">
+            <img aria-hidden="true" alt="Treasure chest" class="game__main__image" src="./assets/images/treasure-chest.webp" />
+            <img aria-hidden="true" alt="Hand" class="game__main__image-hand game__main__image-hand-animation-pulse" src="./assets/images/hand.webp" />
+            <div class="game__main__bonus-container"></div>
+        </main>
+        <footer class="game__footer">
+            <div class="game__progress hidden">
+                <div class="game__progress__bar"></div>
+                <div class="game__progress__text">
+                    <span data-translate="time_left"> Time left: </span>
+                    &nbsp;
+                    <span class="game__progress__value"> 10 </span>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Section Game Clicker: Final Screen -->
+    <section class="game-final-screen hidden">
+        <header class="game__header">
+            <h1 class="game__header__h1" data-translate="congratulations">
+                Congratulations
+            </h1>
+            <p class="game__header__text" data-translate="you_have_to_get_the_bonus">
+                You have 00:01:30 to get the bonus!
+            </p>
+            <h3 class="game__header__h3" data-translate="click_and_get_your_offer">
+                Click the button below to get your special offer.
+            </h3>
+        </header>
+        <main class="game__main">
+            <img aria-hidden="true" alt="Treasure chest" class="game__main__image" src="./assets/images/treasure-chest.webp" />
+        </main>
+        <footer class="game__footer">
+            <button class="game__button" data-translate="get_special_offer">
+                Get Special Offer
+            </button>
+        </footer>
+    </section>
+
+    <!-- Section Modal -->
+    <section class="modal">
+        <div class="modal__window">
+            <h3 class="modal__window__title" data-translate="congratulations">
+                Congratulations!
+            </h3>
+            <p class="modal__window__text" data-translate="you_have_10_seconds_tap_to_earn">
+                You have only 10 seconds. Tap to earn your bonus!
+            </p>
+            <a class="modal__window__button" href="#" data-translate="start">
+                Start
+            </a>
+        </div>
+    </section>
+
+    <script >"use strict";(()=>{var u=()=>{let r=new Date,e=r.getUTCFullYear(),o=String(r.getUTCMonth()+1).padStart(2,"0"),n=String(r.getUTCDate()).padStart(2,"0"),s=String(r.getUTCHours()).padStart(2,"0"),c=String(r.getUTCMinutes()).padStart(2,"0"),i=String(r.getUTCSeconds()).padStart(2,"0"),a=String(r.getUTCMilliseconds()*1e3).padStart(6,"0");return`${e}-${o}-${n} ${s}:${c}:${i}.${a} +00:00`};var l="data-template-hash-by-",B={main:`${l}main`,html:`${l}html`,css:`${l}css`,js:`${l}js`},L={main:"",html:"",css:"",js:""};var t=new URL(window.location.href),g,p,d,h,y,_,H,T,f,v,b,S,w,E,x,N,C,D,I,$={pz:(g=t.searchParams.get("pz"))!=null?g:"",tb:(p=t.searchParams.get("tb"))!=null?p:"",tb_reverse:(d=t.searchParams.get("tb_reverse"))!=null?d:"",ae:(h=t.searchParams.get("ae"))!=null?h:"",z:(y=t.searchParams.get("z"))!=null?y:"",var:(_=t.searchParams.get("var"))!=null?_:"",var_1:(H=t.searchParams.get("var_1"))!=null?H:"",var_2:(T=t.searchParams.get("var_2"))!=null?T:"",var_3:(f=t.searchParams.get("var_3"))!=null?f:"",b:(v=t.searchParams.get("b"))!=null?v:"",campaignid:(b=t.searchParams.get("campaignid"))!=null?b:"",abtest:(S=t.searchParams.get("abtest"))!=null?S:"",rhd:(w=t.searchParams.get("rhd"))!=null?w:"1",s:(E=t.searchParams.get("s"))!=null?E:"",ymid:(x=t.searchParams.get("ymid"))!=null?x:"",wua:(N=t.searchParams.get("wua"))!=null?N:"",use_full_list_or_browsers:(C=t.searchParams.get("use_full_list_or_browsers"))!=null?C:"",cid:(D=t.searchParams.get("cid"))!=null?D:"",geo:(I=t.searchParams.get("geo"))!=null?I:""};var ce=u();var k=typeof window<"u"&&(window.isSecureContext||window.location.protocol==="https:"||window.location.hostname==="localhost");function J(r){return new Promise((e,o)=>{try{if(!k)return o("this feature is available only in secure contexts (HTTPS)");if(!(crypto!=null&&crypto.subtle.digest))return o("crypto.subtle.digest is not available");let n=new TextEncoder;crypto.subtle.digest("SHA-256",n.encode(r)).then(s=>{let i=Array.from(new Uint8Array(s)).map(a=>a.toString(16).padStart(2,"0")).join("");e(i)}).catch(o)}catch(n){o(n)}})}function O(r){let e=r;return e=e.replace(/<base.*?>/gm,""),e=e.replace(/var\s+APP_CONFIG\s*=\s*\{[^}]*\};*/gm,""),e=e.replace(/<script[^>]*src=["'].*?hid\.js.*?["'][^>]*><\/script>/gm,""),e=e.replace(/[\r\n]/gm,""),e=e.replace(/\s+/g,""),e.trim()}function P(r){let e=r instanceof Error?r.message:JSON.stringify(r);window.syncMetric&&window.syncMetric({event:"error",errorMessage:e,errorType:"CUSTOM",errorSubType:"TemplateHash"})}(async()=>{var r;try{window.templateHash=null;let e=(r=document.querySelector("html"))==null?void 0:r.dataset,n=`templateHash:${(e==null?void 0:e.landingName)||""}`,s=await cookieStore.get({name:n}),c=!!new URL(window.location.href).searchParams.get("debug");if(!s||s.expires<Date.now()){document.addEventListener("DOMContentLoaded",async()=>{let i=O(document.documentElement.innerHTML);c&&console.log("HTML used for templateHash after DOMContentLoaded",i),J(JSON.stringify([i])).then(async a=>{var m;window.templateHash=a,(m=window.syncMetric)==null||m.call(window,{event:"template_hash_ready"});let M=24*60*60*1e3;cookieStore.set({name:n,value:a,expires:Date.now()+M})}).catch(a=>{P(a)})});return}!window.templateHash&&s.value&&(window.templateHash=s.value,c&&console.log("templateHash after DOMContentLoaded was already sent:",window.templateHash))}catch(e){P(e)}})();})();</script>
+    <script >"use strict";(()=>{var o=["/assets/scripts/appSdk.js","/assets/scripts/autoexit.js","/assets/scripts/common.js","/assets/scripts/main.js","/assets/scripts/pushScript.js","/assets/scripts/reverse.js","/assets/scripts/translateElements.js","/assets/styles/style.css"];var L=()=>{let e=new Date,t=e.getUTCFullYear(),r=String(e.getUTCMonth()+1).padStart(2,"0"),s=String(e.getUTCDate()).padStart(2,"0"),n=String(e.getUTCHours()).padStart(2,"0"),i=String(e.getUTCMinutes()).padStart(2,"0"),a=String(e.getUTCSeconds()).padStart(2,"0"),l=String(e.getUTCMilliseconds()*1e3).padStart(6,"0");return`${t}-${r}-${s} ${n}:${i}:${a}.${l} +00:00`};var H=(n=>(n.MAIN="main",n.HTML="html",n.CSS="css",n.JS="js",n))(H||{}),z=e=>{let t={nodeCount:0,textLength:0,styleCount:0,scriptCount:0};if(!e)return t;let r=s=>{var n,i;if(t.nodeCount++,s.tag==="#text"?t.textLength+=((i=(n=s.attrs)==null?void 0:n.text)==null?void 0:i.length)||0:s.tag==="style"?t.styleCount++:s.tag==="script"&&t.scriptCount++,s.children)for(let a of s.children)r(a)};return r(e),t},$=(e,t)=>({nodeCountDiff:e.nodeCount-t.nodeCount,textLengthDiff:e.textLength-t.textLength,styleCountDiff:e.styleCount-t.styleCount,scriptCountDiff:e.scriptCount-t.scriptCount});var v={ELEMENT:1,TEXT:3,COMMENT:8},_={key:"data-cs",value:"exclude"},S="data-template-hash-by-",R={main:`${S}main`,html:`${S}html`,css:`${S}css`,js:`${S}js`},A={main:"",html:"",css:"",js:""},P=/var\s+APP_CONFIG\s*=\s*\{[^}]*\};*/gm,w="data-build-html-stats";var j=e=>{let t=A;return Object.values(R).forEach(r=>{let s=e.getAttribute(r),n=r.replace(S,"");s!==null&&(t[n]=s)}),t};var U=e=>{let t=e.getAttribute(w);if(!t)return null;try{return JSON.parse(atob(t))}catch{return null}};var u=new URL(window.location.href),k,G,J,Y,F,X,W,q,V,K,Q,Z,ee,te,re,se,ne,oe,ae,Ie={pz:(k=u.searchParams.get("pz"))!=null?k:"",tb:(G=u.searchParams.get("tb"))!=null?G:"",tb_reverse:(J=u.searchParams.get("tb_reverse"))!=null?J:"",ae:(Y=u.searchParams.get("ae"))!=null?Y:"",z:(F=u.searchParams.get("z"))!=null?F:"",var:(X=u.searchParams.get("var"))!=null?X:"",var_1:(W=u.searchParams.get("var_1"))!=null?W:"",var_2:(q=u.searchParams.get("var_2"))!=null?q:"",var_3:(V=u.searchParams.get("var_3"))!=null?V:"",b:(K=u.searchParams.get("b"))!=null?K:"",campaignid:(Q=u.searchParams.get("campaignid"))!=null?Q:"",abtest:(Z=u.searchParams.get("abtest"))!=null?Z:"",rhd:(ee=u.searchParams.get("rhd"))!=null?ee:"1",s:(te=u.searchParams.get("s"))!=null?te:"",ymid:(re=u.searchParams.get("ymid"))!=null?re:"",wua:(se=u.searchParams.get("wua"))!=null?se:"",use_full_list_or_browsers:(ne=u.searchParams.get("use_full_list_or_browsers"))!=null?ne:"",cid:(oe=u.searchParams.get("cid"))!=null?oe:"",geo:(ae=u.searchParams.get("geo"))!=null?ae:""};var mt=L();var O=()=>{var e,t;return typeof window>"u"?!0:(t=(e=window==null?void 0:window.location)==null?void 0:e.search)==null?void 0:t.includes("debug=1")},ie=(e,t)=>{O()&&(t!==void 0?console.log(e,t):console.log(e))},D=e=>{O()&&console.group(e)},ce=(e,t)=>{O()&&(t!==void 0?console.warn(e,t):console.warn(e))};var ue={css:{pattern:/\.css$/,htmlRegex:/<link[^>]+href="([^"]+\.css)"/g,initiator:"link"},js:{pattern:/\.js$/,htmlRegex:/<script[^>]+src="([^"]+\.js)"/g,initiator:"script"}};var le=e=>Object.values(ue).some(t=>e.initiatorType===t.initiator&&t.pattern.test(e.name));var me=e=>{var t;return((t=e.match(/\.([a-z0-9]+)(?:\?|$)/i))==null?void 0:t[1])||""},pe=e=>{let t={};for(let r of e){let s=r.extension;t[s]||(t[s]=[]),t[s].push(r)}return t},ge=e=>(e.startsWith(location.origin)&&(e=e.replace(location.origin,"")),Ce(e)),Ce=e=>{let t=e.indexOf("/assets/");if(t!==-1)return e.slice(t);if(e.startsWith("./assets/"))return e.slice(1);if(e.startsWith("assets/")||!e.startsWith("/"))return"/"+e;let r=e.lastIndexOf("/"),s=e.slice(r+1);return s?"/"+s:e};var de=async({html:e,resources:t,hashFunction:r})=>{let s=JSON.stringify({html:e,resources:t}),n=JSON.stringify({html:e}),i=pe(t),a=Object.entries(i).map(([y,b])=>{let I=b.map(T=>({name:T.name,size:T.size})).sort((T,f)=>T.name.localeCompare(f.name));return[y,JSON.stringify(I)]}),[l,h,...p]=await Promise.all([r(s),r(n),...a.map(([,y])=>r(y))]),N=z(e);return{payload:s,resourcesHash:{...A,main:l,html:h,...Object.fromEntries(a.map(([y],b)=>[y,p[b]]))},htmlStats:N}};var fe=e=>e?e.nodeType===v.TEXT?"text":e.nodeType===v.COMMENT?"comment":e.nodeType===v.ELEMENT?"element":"element":"text";var B=e=>{let t={};if(!e)return t;if(typeof e.getAttributeNames=="function"){let r=e.getAttributeNames();for(let s of r){let n=e.getAttribute(s);t[s]=n!=null?n:""}return t}return t},he=(e,t)=>B(e)[t];var ye=e=>{var t,r;return e&&((r=(t=e.content)==null?void 0:t.childNodes)==null?void 0:r.length)>0?Array.from(e.content.childNodes):e&&e.childNodes?Array.from(e.childNodes):[]};var Te=e=>e.tagName.toLowerCase();var _e=e=>e.textContent!==void 0&&e.textContent!==null?e.textContent:"";var Re=e=>[...Object.values(R),w].includes(e),Ee=e=>{let t=Object.entries(e).filter(([r])=>!Re(r)).map(([r,s])=>[r,s!=null?s:""]);return t.sort(([r],[s])=>r.localeCompare(s)),Object.fromEntries(t)};var M=(e,t=null)=>{if(t!=="runtime"&&t!=="build")return null;let r=fe(e);if(r==="comment")return null;if(r==="text"){let p=_e(e).replace(/\s+/g," ").trim();return p?{tag:"#text",attrs:{text:p}}:null}let s=Te(e);if(!s||s==="base"||he(e,_.key)||s==="script"&&e.textContent.match(P))return null;let n=Ee(B(e)),i=ye(e),a=[];for(let h of i){let p=M(h,t);p&&a.push(p)}let l={tag:s};return Object.keys(n).length&&(l.attrs=n),a.length&&(l.children=a),l};var He=o!=null?o:[],Pe=["adblock","via_inject_blocker.css","ibfunctions.js","fbevents.js"],we=/shared-[^/]*\.js$/,Oe=e=>He.length===0||we.test(e)?!0:He.some(t=>e.endsWith(t)||t.endsWith(e)),De=e=>Pe.some(t=>e.name.includes(t))?"external":Oe(e.name)?e.size?"normal":"unloaded":"unknown",Se=e=>{let r=e.getEntriesByType("resource").filter(i=>!!le(i)),s={};return{hashResources:r.map(i=>{let a={name:ge(i.name),size:i.decodedBodySize||0,extension:me(i.name)},l=De(a);return s[l]?s[l].push(a):s[l]=[a],a}).sort((i,a)=>i.name.localeCompare(a.name)),resourcesLogs:s}};var x=document.documentElement.cloneNode(!0),Be=async e=>{let r=new TextEncoder().encode(e),s=await crypto.subtle.digest("SHA-256",r),n=new Uint8Array(s);return Array.from(n).map(i=>i.toString(16).padStart(2,"0")).join("")},Me=async()=>{if(!x)return;let e=M(x,"runtime"),{hashResources:t,resourcesLogs:r}=Se(performance);return{...await de({html:e,resources:t,hashFunction:Be}),resourcesPayload:r}};document.addEventListener("DOMContentLoaded",async()=>{var e,t;try{let r=j(x);if(!r.main)return;let n=await Me();if(!n)return;let{payload:i,resourcesHash:a,resourcesPayload:l,htmlStats:h}=n,p={};D("[TemplateHash] Payload"),ie(i),console.groupEnd(),D(`[TemplateHash] ${Object.keys(a).filter(c=>a[c]!=="").join(", ")}`),Object.entries(a).forEach(([c,m])=>{let d=c,g=r[d];if(!g)return;let C=g===m,xe=C?"are identical":"was modified";p[d]={buildHash:g,clientHash:m,equal:C},ce(`${c.toUpperCase()} ${xe}.
+Build hash:   ${g}
+Runtime hash: ${m}`)}),console.groupEnd();let N=Object.values(H),y=Object.values(p).some(c=>c.equal===!1);window.templateHashes=Object.fromEntries(Object.entries(p).sort(([c],[m])=>{let d=N.indexOf(c),g=N.indexOf(m);return d!==-1&&g!==-1?d-g:d!==-1?-1:g!==-1?1:c.localeCompare(m)}));let b=4096,I=150,T=10,f={scripts:[],styles:[]};x.querySelectorAll("style").forEach(c=>{if(c.getAttribute(_.key)===_.value||f.styles.length>=T)return;let m=(c.textContent||"").replace(/\s+/g," ").trim();if(m){let g=m.slice(0,I).replace(/</g,"\\u003C");f.styles.push(g)}}),x.querySelectorAll("script:not([src])").forEach(c=>{var d;if(c.getAttribute(_.key)===_.value||(d=c.textContent)!=null&&d.match(P)||f.scripts.length>=T)return;let m=(c.textContent||"").replace(/\s+/g," ").trim();if(m){let C=m.slice(0,I).replace(/</g,"\\u003C");f.scripts.push(C)}});let E={...window.templateHashes};if(y){E.inlineSources=f,E.resources=l;let c=U(x);c&&h&&(E.diffHints=$(h,c)),JSON.stringify(E).length>b&&(E.inlineSources={scripts:f.scripts.slice(0,3),styles:f.styles.slice(0,3)})}window.templateHashes=E,(e=window.syncMetric)==null||e.call(window,{event:"template_hashes_ready"})}catch(r){console.error("Error computing runtime template hash:",r),r instanceof Error&&((t=window.syncMetric)==null||t.call(window,{event:"error",errorMessage:r.message,errorType:"TemplateHashes"}))}});})();
+</script>
+    </body>
+
+</html>
