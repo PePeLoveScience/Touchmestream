@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TouchMeStream - Sweepstakes Participation Guide</title>
-  <meta name="description" content="A clear guide about online sweepstakes eligibility, privacy, official rules, and responsible participation before visiting a third-party promotion." />
+  <title>TouchMeStream - Rewards & Sweepstakes Hub</title>
+  <meta name="description" content="TouchMeStream connects visitors with third-party reward, sweepstakes, survey, and game-based promotions from advertising partners." />
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-bg.png" />
+  <link rel="apple-touch-icon" href="assets/favicon-bg.png" />
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     :root {
@@ -14,8 +16,8 @@
       --card-2: rgba(255,255,255,0.095);
       --border: rgba(255,255,255,0.13);
       --text: #ffffff;
-      --muted: rgba(255,255,255,0.76);
-      --soft: rgba(255,255,255,0.60);
+      --muted: rgba(255,255,255,0.78);
+      --soft: rgba(255,255,255,0.62);
       --accent: #5fd087;
       --accent-dark: #31a864;
       --warning: #ffd166;
@@ -32,15 +34,17 @@
     .header { padding: 18px 0; border-bottom: 1px solid var(--border); background: rgba(7,12,22,0.35); }
     .nav { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
     .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 18px; text-decoration: none; }
+    .logo-img { width: 42px; height: 42px; display: block; object-fit: cover; flex: 0 0 42px; border-radius: 12px; }
+    .hero-logo { width: min(320px, 82vw); display: block; margin-bottom: 24px; border-radius: 20px; box-shadow: 0 10px 28px rgba(0,0,0,.24); }
     .logo-icon { width: 34px; height: 34px; background: var(--accent); color: #0f1b2a; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 800; }
     .nav-links { display: flex; gap: 22px; list-style: none; flex-wrap: wrap; }
     .nav-links a { color: var(--muted); text-decoration: none; font-size: 14px; }
     .nav-links a:hover { color: var(--accent); }
     .main-content { padding: 58px 0; }
-    .hero-section { max-width: 820px; margin-bottom: 44px; }
+    .hero-section { max-width: 880px; margin-bottom: 44px; }
     .trust-badge { background: rgba(95, 208, 135, 0.12); color: var(--accent); padding: 8px 15px; border-radius: 999px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .45px; display: inline-block; margin-bottom: 24px; border: 1px solid rgba(95, 208, 135, 0.28); }
-    .hero-title { font-size: clamp(34px, 7vw, 54px); font-weight: 800; line-height: 1.1; margin-bottom: 18px; letter-spacing: -0.04em; }
-    .hero-description { font-size: 18px; color: var(--muted); max-width: 740px; margin-bottom: 26px; }
+    .hero-title { font-size: clamp(34px, 7vw, 56px); font-weight: 800; line-height: 1.1; margin-bottom: 18px; letter-spacing: -0.04em; }
+    .hero-description { font-size: 18px; color: var(--muted); max-width: 760px; margin-bottom: 26px; }
     .disclosure-banner { background: rgba(255, 209, 102, 0.11); border: 1px solid rgba(255, 209, 102, 0.35); border-radius: 14px; padding: 18px; margin: 22px 0 30px; color: rgba(255,255,255,0.9); }
     .disclosure-banner strong { color: var(--warning); }
     .features-row { display: flex; gap: 12px; margin-bottom: 32px; flex-wrap: wrap; }
@@ -52,15 +56,21 @@
     .btn-secondary { background: rgba(255,255,255,0.1); color: #fff; border: 1px solid rgba(255,255,255,0.18); }
     .btn-secondary:hover { background: rgba(255,255,255,0.17); transform: translateY(-1px); }
     .content-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-bottom: 32px; }
-    .content-card, .faq-section, .continue-section { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 28px; backdrop-filter: blur(10px); }
-    .content-card h2, .content-card h3, .faq-section h2, .continue-section h2 { font-size: 24px; margin-bottom: 14px; }
-    .content-card p, .faq-answer, .continue-section p { color: var(--muted); margin-bottom: 16px; }
+    .content-card, .faq-section, .continue-section, .steps-section { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 28px; backdrop-filter: blur(10px); }
+    .content-card h2, .content-card h3, .faq-section h2, .continue-section h2, .steps-section h2 { font-size: 24px; margin-bottom: 14px; }
+    .content-card p, .faq-answer, .continue-section p, .steps-section p { color: var(--muted); margin-bottom: 16px; }
     .small-note { color: var(--soft); font-size: 13px; }
     .checklist { list-style: none; padding: 0; margin-top: 12px; }
     .checklist li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; color: rgba(255,255,255,0.90); }
     .checklist li:before { content: "✓"; background: var(--accent); color: #0f1b2a; width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 800; flex: 0 0 22px; margin-top: 1px; }
     .warning-list li:before { content: "!"; background: var(--warning); }
     .section-label { color: var(--accent); text-transform: uppercase; letter-spacing: .08em; font-size: 12px; font-weight: 800; margin-bottom: 8px; }
+    .steps-section { margin-bottom: 32px; }
+    .steps-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-top: 20px; }
+    .step-card { background: rgba(255,255,255,0.055); border: 1px solid rgba(255,255,255,0.12); border-radius: 14px; padding: 18px; }
+    .step-number { width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: var(--accent); color: #0f1b2a; font-weight: 800; margin-bottom: 12px; }
+    .step-card h3 { font-size: 17px; margin-bottom: 8px; }
+    .step-card p { font-size: 14px; color: var(--muted); margin: 0; }
     .faq-section { margin-bottom: 32px; }
     .faq-item { border-top: 1px solid var(--border); padding: 18px 0; }
     .faq-item:first-of-type { border-top: 0; }
@@ -71,14 +81,16 @@
     .footer-content { display: flex; justify-content: space-between; gap: 20px; align-items: center; flex-wrap: wrap; }
     .footer-links { display: flex; gap: 18px; flex-wrap: wrap; }
     .footer-links a { color: var(--accent); text-decoration: none; }
+    @media (max-width: 900px) { .steps-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
     @media (max-width: 768px) {
       .nav-links { gap: 14px; }
       .content-grid { grid-template-columns: 1fr; }
+      .steps-grid { grid-template-columns: 1fr; }
       .main-content { padding: 38px 0; }
-      .content-card, .faq-section, .continue-section { padding: 22px; }
+      .content-card, .faq-section, .continue-section, .steps-section { padding: 22px; }
     }
   </style>
-  <!-- Meta Pixel Code: keep only if your privacy policy discloses pixel/cookie use and your region allows it. -->
+  <!-- Advertising measurement script -->
   <script>
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
@@ -88,19 +100,19 @@
     fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1769611491085526&ev=PageView&noscript=1" /></noscript>
-  <!-- End Meta Pixel Code -->
+  <!-- End advertising measurement script -->
 </head>
 <body>
   <header class="header">
     <div class="container">
       <nav class="nav" aria-label="Main navigation">
         <a href="/" class="logo" aria-label="TouchMeStream home">
-          <div class="logo-icon">T</div>
+          <img class="logo-img" src="assets/logo-icon-bg.png" alt="TouchMeStream logo" />
           <span>TouchMeStream</span>
         </a>
         <ul class="nav-links">
-          <li><a href="#guide">Guide</a></li>
-          <li><a href="#checklist">Checklist</a></li>
+          <li><a href="#how-it-works">How it works</a></li>
+          <li><a href="#offers">Promotions</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="/privacy/">Privacy</a></li>
           <li><a href="/terms/">Terms</a></li>
@@ -112,102 +124,130 @@
   <main class="main-content">
     <div class="container">
       <section class="hero-section" id="guide">
-        <div class="trust-badge">Information-first landing page</div>
-        <h1 class="hero-title">Understand online sweepstakes before you participate.</h1>
+        <img class="hero-logo" src="assets/logo-full-bg.png" alt="TouchMeStream" />
+        <div class="trust-badge">Partner reward promotions</div>
+        <h1 class="hero-title">Discover online reward and sweepstakes promotions.</h1>
         <p class="hero-description">
-          TouchMeStream provides general information about sweepstakes-style promotions, including eligibility, official rules, privacy, and responsible participation. We do not promise prizes, rewards, or eligibility.
+          TouchMeStream connects visitors with third-party advertisers, brands, and promotion partners. Some promotions may include a short game, simple questions, surveys, or other steps before you can review the reward claim instructions.
         </p>
 
         <div class="disclosure-banner">
-          <strong>Important:</strong> TouchMeStream is an independent informational website and may link to third-party promotions. We are not Facebook, Instagram, Meta, Zeydoo, or the official sponsor/operator of any partner promotion. Always review the partner page and its official rules before submitting information.
+          <strong>Disclosure:</strong> Promotions are operated by third-party partners. Eligibility, availability, reward details, and claim requirements are shown on the partner page and may vary by location. Rewards are not guaranteed.
         </div>
 
         <div class="features-row" aria-label="Important disclosures">
-          <div class="feature-badge">Outcomes are not promised</div>
-          <div class="feature-badge">18+ or age of majority</div>
-          <div class="feature-badge">Void where prohibited</div>
-          <div class="feature-badge">Read official rules first</div>
+          <div class="feature-badge">Partner-operated promotions</div>
+          <div class="feature-badge">Game or question steps may apply</div>
+          <div class="feature-badge">Eligibility rules apply</div>
+          <div class="feature-badge">No guaranteed reward</div>
         </div>
 
         <div class="cta-buttons">
-          <a href="#checklist" class="btn btn-primary">Review the checklist</a>
-          <a href="#before-continue" class="btn btn-secondary">Before you continue</a>
+          <a href="#how-it-works" class="btn btn-primary">See how it works</a>
+          <a href="#before-continue" class="btn btn-secondary">Continue</a>
         </div>
       </section>
 
-      <div class="content-grid" id="checklist">
+      <section class="steps-section" id="how-it-works">
+        <div class="section-label">How it works</div>
+        <h2>Simple participation flow</h2>
+        <p>Each partner promotion can be different. In general, users may be asked to complete a short interactive step and then review the partner page for the full rules and claim requirements.</p>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h3>Open a promotion</h3>
+            <p>Choose an available partner promotion and continue to the next step.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h3>Complete the activity</h3>
+            <p>Some campaigns may include a short game, quiz, survey, or question flow.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h3>Review the rules</h3>
+            <p>Check eligibility, location limits, privacy terms, and reward claim details.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <h3>Follow partner steps</h3>
+            <p>If you qualify, follow the partner page instructions to continue the claim process.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="content-grid" id="offers">
         <section class="content-card">
-          <div class="section-label">What to check</div>
-          <h2>Signs of a clear promotion</h2>
-          <p>Before entering any sweepstakes, look for transparent rules and a real sponsor identity. A legitimate promotion should make it easy to understand who runs it and how winners are selected.</p>
+          <div class="section-label">About our partners</div>
+          <h2>Connected with advertisers and companies</h2>
+          <p>TouchMeStream may work with multiple advertising partners, offer providers, and third-party companies that promote sweepstakes-style, survey, quiz, game, or reward campaigns.</p>
           <ul class="checklist">
-            <li>Official rules with eligibility, start/end dates, and entry limits.</li>
-            <li>A clear sponsor or promoter name and contact information.</li>
-            <li>Prize details, approximate retail value, winner selection method, and notification process.</li>
-            <li>Privacy information explaining how your data may be used.</li>
-            <li>No claim that every entrant receives a prize or reward.</li>
+            <li>Partner pages explain the official rules and requirements.</li>
+            <li>Some promotions may require answering questions or completing a game-style activity.</li>
+            <li>Availability can change by country, device, campaign, and advertiser.</li>
+            <li>Partners are responsible for final eligibility decisions, fulfillment, and support.</li>
           </ul>
         </section>
 
         <section class="content-card">
-          <div class="section-label">Safety</div>
-          <h2>Red flags to avoid</h2>
-          <p>Do not continue with any promotion that asks for sensitive credentials or uses pressure tactics that make the offer hard to understand.</p>
+          <div class="section-label">Before joining</div>
+          <h2>What users should check</h2>
+          <p>Before taking part, read the partner page carefully so you understand exactly what is required.</p>
+          <ul class="checklist">
+            <li>Age, country, device, and entry requirements.</li>
+            <li>Reward description, claim steps, and availability.</li>
+            <li>Privacy policy and how submitted information may be used.</li>
+            <li>Any limits, deadlines, or conditions shown by the partner.</li>
+            <li>Whether the promotion is void where prohibited.</li>
+          </ul>
+        </section>
+
+        <section class="content-card">
+          <div class="section-label">Safe participation</div>
+          <h2>What to avoid</h2>
+          <p>Do not continue if a page feels unsafe, unclear, or asks for information that does not match the promotion.</p>
           <ul class="checklist warning-list">
             <li>Requests for passwords, one-time verification codes, or banking PINs.</li>
-            <li>Pressure to pay unexpected fees to receive a prize.</li>
-            <li>No official rules, no privacy details, or no clear sponsor identity.</li>
-            <li>Misleading countdowns, fake scarcity, or language that promises a prize.</li>
-            <li>Requests to tag friends or share to personal timelines as a required entry method.</li>
+            <li>Claims that every visitor will receive the same reward.</li>
+            <li>Unexplained fees or requirements that were not shown clearly.</li>
+            <li>Missing rules, missing privacy details, or unclear sponsor information.</li>
+            <li>Fake urgency, fake scarcity, or confusing instructions.</li>
           </ul>
         </section>
 
         <section class="content-card">
-          <div class="section-label">Responsible participation</div>
-          <h2>What participation means</h2>
-          <p>Entering a sweepstakes is optional. Some promotions are only available in certain countries or to people above a minimum age. Your odds depend on the official rules and number of eligible entries.</p>
-          <ul class="checklist">
-            <li>Only enter if you meet the age and location requirements.</li>
-            <li>Submit accurate information and follow the stated entry limits.</li>
-            <li>Keep a copy of the official rules for reference.</li>
-            <li>Unsubscribe from marketing messages if you no longer want them.</li>
-          </ul>
-        </section>
-
-        <section class="content-card">
-          <div class="section-label">Advertising disclosure</div>
-          <h2>How this site may be funded</h2>
-          <p>TouchMeStream may receive compensation when visitors click partner links or participate in third-party offers. This does not change the rules, eligibility, odds, or outcome of any promotion.</p>
-          <p class="small-note">This website is not sponsored, endorsed, administered by, or associated with Facebook, Instagram, or Meta.</p>
+          <div class="section-label">Important disclaimer</div>
+          <h2>Promotions are not guaranteed</h2>
+          <p>TouchMeStream does not decide who qualifies, who receives a reward, or how a partner promotion is fulfilled. The partner page and official rules control the final requirements.</p>
+          <p class="small-note">We may receive compensation when visitors click partner links or participate in third-party offers. This does not change the rules, eligibility requirements, or final outcome.</p>
         </section>
       </div>
 
       <section class="faq-section" id="faq">
         <h2>Common questions</h2>
         <div class="faq-item">
-          <div class="faq-question">Does this page promise that I will receive something?</div>
-          <div class="faq-answer">No. We do not promise prizes, rewards, payments, approvals, or eligibility. Sweepstakes outcomes depend on the official rules of the third-party promotion.</div>
+          <div class="faq-question">Is TouchMeStream the sponsor of every promotion?</div>
+          <div class="faq-answer">No. TouchMeStream is a discovery and information website. Partner promotions are operated by third-party advertisers, brands, or promotion providers.</div>
         </div>
         <div class="faq-item">
-          <div class="faq-question">Is this promotion run by Meta or Facebook?</div>
-          <div class="faq-answer">No. This site is not sponsored, endorsed, administered by, or associated with Facebook, Instagram, or Meta.</div>
+          <div class="faq-question">Do I always get a reward after playing or answering questions?</div>
+          <div class="faq-answer">No. A game, quiz, or question flow does not guarantee a reward. Eligibility, availability, and claim requirements depend on the partner promotion rules.</div>
         </div>
         <div class="faq-item">
-          <div class="faq-question">Do I need to buy something?</div>
-          <div class="faq-answer">Many sweepstakes state “no purchase necessary,” but you must read the partner promotion’s official rules because requirements can vary by region and sponsor.</div>
+          <div class="faq-question">Why do some promotions ask questions?</div>
+          <div class="faq-answer">Some advertisers use questions, surveys, or interactive steps to match users with available campaigns or confirm eligibility before showing the next steps.</div>
         </div>
         <div class="faq-item">
-          <div class="faq-question">What should I read before entering?</div>
-          <div class="faq-answer">Read the official rules, eligibility requirements, privacy policy, prize description, odds, and winner notification method on the partner promotion page.</div>
+          <div class="faq-question">What should I read before submitting information?</div>
+          <div class="faq-answer">Read the official rules, eligibility requirements, privacy policy, reward details, and claim instructions shown on the partner page.</div>
         </div>
       </section>
 
       <section class="continue-section" id="before-continue">
-        <h2>Continue only after reviewing the official rules</h2>
-        <p>Partner promotions are operated by third parties. By continuing, you understand that TouchMeStream is not the sponsor/operator, outcomes are not promised, and the partner page may have its own terms and privacy practices.</p>
-        <!-- Replace the href below with your real Zeydoo/tracking URL. Do not use hidden redirects or device-based cloaking. -->
-        <a class="btn btn-primary" href="https://example.com/replace-with-your-zeydoo-offer-link" rel="nofollow sponsored noopener">Continue to partner promotion</a>
-        <p class="small-note">Replace this button link with the exact destination you advertise. The ad copy, this page, and the final offer page should all describe the same promotion.</p>
+        <h2>Explore promotions information</h2>
+        <p>Promotions and eligibility details may change over time. Review how participation works, check the applicable rules, and only continue with offers that clearly explain their requirements.</p>
+        <a class="btn btn-primary" href="#offers">View promotion info</a>
+        <p class="small-note">When promotions are available, their individual pages may have separate terms, privacy policies, eligibility rules, and claim processes.</p>
       </section>
     </div>
   </main>
@@ -215,7 +255,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <div>© 2026 TouchMeStream. Informational content only.</div>
+        <div>© 2026 TouchMeStream. All rights reserved.</div>
         <div class="footer-links">
           <a href="/privacy/">Privacy Policy</a>
           <a href="/terms/">Terms & Disclosures</a>
